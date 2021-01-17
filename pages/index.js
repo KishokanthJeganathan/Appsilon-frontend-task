@@ -1,10 +1,14 @@
-import styled from 'styled-components'
+import React from 'react';
+import DataSnippetHolder from '../src/components/data-snippet-holder/DataSnippetHolder';
+import Title from '../src/components/title/Title';
 
-const Title = styled.h1`
-  font-size: 50px;
-  color: ${({ theme }) => theme.colors.primary};
-`
+const index = () => {
+	return (
+		<main>
+			<Title title="Enterprise Shiny Dashboards" />
+			<DataSnippetHolder />
+		</main>
+	);
+};
 
-export default function Home() {
-  return <Title>My page</Title>
-}
+export default index;
