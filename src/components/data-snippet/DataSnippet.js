@@ -20,7 +20,7 @@ const DataSnippet = ({ sum, title, change, icon, BgColor }) => {
 	return (
 		// Math.sign checks if the the change is + o - and passes a prop to change the color of the %
 		<S.Div isMinus={Math.sign(change) === -1 && 'minus'}>
-			<S.Num>$ {sum}</S.Num>
+			<S.Num>{sum}</S.Num>
 			<S.Span>
 				<p>{title}</p>
 				<p>
