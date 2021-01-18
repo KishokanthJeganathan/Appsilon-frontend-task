@@ -28,18 +28,12 @@ const SummaryGraph = () => {
 			uv: 1480,
 			pv: 1200,
 			amt: 1228
-		},
-		{
-			name: 'Page F',
-			uv: 1400,
-			pv: 680,
-			amt: 1700
 		}
 	];
 	return (
 		<S.Section>
 			<GraphTitle title="SUMMARY" />
-			<div style={{ width: '100%', height: '200px' }}>
+			<div style={{ width: '100%', height: '170px' }}>
 				<ResponsiveContainer width="99%">
 					<ComposedChart
 						layout="vertical"
