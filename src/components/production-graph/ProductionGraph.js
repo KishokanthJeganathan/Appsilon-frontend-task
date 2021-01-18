@@ -5,6 +5,7 @@ import { GiCrossedBones } from 'react-icons/gi';
 import { IoIosArrowDown } from 'react-icons/io';
 import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 import { salesChartData } from '../../../utils/Data';
+import ButtonHolder from '../button-holder/ButtonHolder';
 
 const ProductionGraph = () => {
 	return (
@@ -42,6 +43,8 @@ const ProductionGraph = () => {
 					</BarChart>
 				</ResponsiveContainer>
 			</div>
+
+			<ButtonHolder />
 		</S.Section>
 	);
 };
