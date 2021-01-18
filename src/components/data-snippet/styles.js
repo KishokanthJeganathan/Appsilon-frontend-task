@@ -1,12 +1,9 @@
 import styled from 'styled-components';
-import { setColor, setFontSize } from '../../../utils/helpers';
+import { boxShadow, setColor, setFontSize } from '../../../utils/helpers';
 
 export const Div = styled.div`
 	background-color: ${setColor.lightGray};
-	-webkit-box-shadow: 3px 3px 5px 2px #d6d6d6;
-	box-shadow: 3px 3px 5px 2px #d6d6d6;
-
-	p {
+	${boxShadow} p {
 		margin: 0.5rem;
 	}
 

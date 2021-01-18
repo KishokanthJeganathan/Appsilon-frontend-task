@@ -21,6 +21,9 @@ export const setFontSize = {
 	icon: '1.4rem'
 };
 
+export const boxShadow = `-webkit-box-shadow: 3px 3px 5px 2px #d6d6d6;
+box-shadow: 3px 3px 5px 2px #d6d6d6;`;
+
 const sizes = {
 	large: 1200,
 	desktop: 992,
