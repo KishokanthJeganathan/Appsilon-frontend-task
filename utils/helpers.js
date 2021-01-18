@@ -1,9 +1,9 @@
 import { css } from 'styled-components';
 
 export const setColor = {
-	black: 'black',
-	orange: '#D4A35E',
-	white: 'white'
+	lightGray: '#fafcfd',
+	gray: '#f2f2f2',
+	strongGray: 'gray'
 };
 
 export const setFontWeight = {
@@ -12,18 +12,13 @@ export const setFontWeight = {
 	bold: '600'
 };
 
-export const setPosition = {
-	center: `display: flex;
-	justify-content:center;
-	align-items:center;`
-};
-
 export const setFontSize = {
 	title: '3rem',
-	smallTitle: '2rem',
+	smallTitle: '2.2rem',
+	normalBig: '1.2rem',
 	normal: '1.1rem',
-	normalSmall: '1rem',
-	verySmall: '0.8rem'
+	normalSmall: '0.9rem',
+	icon: '1.4rem'
 };
 
 const sizes = {

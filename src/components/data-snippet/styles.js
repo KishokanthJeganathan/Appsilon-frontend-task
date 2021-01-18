@@ -1,7 +1,8 @@
 import styled from 'styled-components';
+import { setColor, setFontSize } from '../../../utils/helpers';
 
 export const Div = styled.div`
-	background-color: #fafcfd;
+	background-color: ${setColor.lightGray};
 	-webkit-box-shadow: 3px 3px 5px 2px #d6d6d6;
 	box-shadow: 3px 3px 5px 2px #d6d6d6;
 
@@ -10,7 +11,7 @@ export const Div = styled.div`
 	}
 
 	span:nth-of-type(1) {
-		font-size: 1.2rem;
+		font-size: ${setFontSize.normalBig};
 		padding: 0.5rem;
 		p:nth-of-type(2) {
 			color: ${(props) => (props.isMinus === 'minus' ? '#ff5e5e' : '#c7e5ac;')};
@@ -18,9 +19,9 @@ export const Div = styled.div`
 	}
 
 	span:nth-of-type(2) {
-		background-color: #f2f2f2;
+		background-color: ${setColor.gray};
 		P {
-			font-size: 0.9rem;
+			font-size: ${setFontSize.small};
 			margin: 0.5rem 1rem;
 			display: grid;
 			grid-template-columns: 1.3fr 1fr;
@@ -39,7 +40,7 @@ export const Span = styled.span`
 `;
 
 export const Num = styled.p`
-	font-size: 2.2rem;
+	font-size: ${setFontSize.smallTitle};
 	padding: 0rem 0.5rem;
 	font-weight: 400;
 	margin: 0rem;
@@ -48,7 +49,7 @@ export const Num = styled.p`
 export const IconHolder = styled.span`
 	background-color: ${(props) => props.BgColor};
 	color: white;
-	font-size: 1.4rem;
+	font-size: ${setFontSize.icon};
 	display: grid;
 	justify-items: center;
 	align-items: center;
