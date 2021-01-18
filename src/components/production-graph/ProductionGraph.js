@@ -1,11 +1,9 @@
 import React from 'react';
 import * as S from './styles';
-import { VscSync } from 'react-icons/vsc';
-import { GiCrossedBones } from 'react-icons/gi';
-import { IoIosArrowDown } from 'react-icons/io';
-import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 
+import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 import ButtonHolder from '../button-holder/ButtonHolder';
+import GraphTitle from '../graph-title/GraphTitle';
 
 const ProductionGraph = () => {
 	const salesChartData = [
@@ -54,17 +52,9 @@ const ProductionGraph = () => {
 	];
 	return (
 		<S.Section>
-			<S.TitleDiv>
-				<h2>PRODUCTION</h2>
-				<span>
-					<VscSync />
-					<GiCrossedBones />
-					<IoIosArrowDown />
-				</span>
-			</S.TitleDiv>
-
+			<GraphTitle title="PRODUCTION" />
 			<div>
-				<ResponsiveContainer width="100%" height={400}>
+				<ResponsiveContainer width="99%" height={400}>
 					<BarChart
 						width={500}
 						height={300}

@@ -1,6 +1,7 @@
 import React from 'react';
 import DataSnippet from '../data-snippet/DataSnippet';
 import * as S from './styles';
+import { v4 as uuidv4 } from 'uuid';
 
 const DataSnippetHolder = () => {
 	const data = [
@@ -13,6 +14,7 @@ const DataSnippetHolder = () => {
 		<S.Section>
 			{data.map((snippet) => (
 				<DataSnippet
+					key={uuidv4()}
 					sum={snippet.sum}
 					title={snippet.title}
 					change={snippet.change}
