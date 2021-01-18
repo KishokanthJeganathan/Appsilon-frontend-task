@@ -18,16 +18,14 @@ import ButtonHolder from '../button-holder/ButtonHolder';
 const SummaryGraph = () => {
 	const data = [
 		{
-			name: 'Page C',
-			uv: 1397,
-			pv: 1098,
-			amt: 989
+			name: 'Sector A',
+			revenue: 1397,
+			cost: 1098
 		},
 		{
-			name: 'Page D',
-			uv: 1480,
-			pv: 1200,
-			amt: 1228
+			name: 'Sector B',
+			revenue: 1480,
+			cost: 1200
 		}
 	];
 	return (
@@ -50,9 +48,8 @@ const SummaryGraph = () => {
 						<YAxis dataKey="name" type="category" />
 						<Tooltip />
 						<Legend />
-						<Area dataKey="amt" fill="#8884d8" stroke="#8884d8" />
-						<Bar dataKey="pv" barSize={20} fill="#413ea0" />
-						<Line dataKey="uv" stroke="#ff7300" />
+						<Area dataKey="revenue" fill="#8884d8" stroke="#8884d8" />
+						<Bar dataKey="cost" barSize={20} fill="#413ea0" />
 					</ComposedChart>
 				</ResponsiveContainer>
 			</div>

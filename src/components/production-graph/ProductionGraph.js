@@ -8,25 +8,25 @@ import GraphTitle from '../graph-title/GraphTitle';
 const ProductionGraph = () => {
 	const salesChartData = [
 		{
-			name: 'Page A',
-			pv: 2400,
-			amt: 2400
+			name: 'Bogota',
+			revenue: 8400,
+			cost: 2400
 		},
 
 		{
-			name: 'Page C',
-			pv: 9800,
-			amt: 2290
+			name: 'Lima',
+			revenue: 9800,
+			cost: 2290
 		},
 		{
-			name: 'Page D',
-			pv: 3908,
-			amt: 2000
+			name: 'La Paz',
+			revenue: 3908,
+			cost: 2000
 		},
 		{
-			name: 'Page F',
-			pv: 3800,
-			amt: 2500
+			name: 'Brasilia',
+			revenue: 3800,
+			cost: 2500
 		}
 	];
 	return (
@@ -48,9 +48,8 @@ const ProductionGraph = () => {
 						<YAxis />
 						<Tooltip />
 						<Legend />
-						<Bar dataKey="pv" stackId="a" fill="#8884d8" />
-						<Bar dataKey="amt" stackId="a" fill="#82ca9d" />
-						<Bar dataKey="uv" fill="#ffc658" />
+						<Bar dataKey="revenue" stackId="a" fill="#8884d8" />
+						<Bar dataKey="cost" stackId="a" fill="#82ca9d" />
 					</BarChart>
 				</ResponsiveContainer>
 			</div>

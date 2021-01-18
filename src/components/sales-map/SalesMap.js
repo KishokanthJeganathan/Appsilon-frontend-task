@@ -30,7 +30,7 @@ const MapChart = () => {
 		<S.Section>
 			<GraphTitle title="SUMMARY" />
 			<ComposableMap
-				style={{ width: '100%', height: '80%' }}
+				style={{ width: '100%', height: '90%' }}
 				projection="geoAzimuthalEqualArea"
 				projectionConfig={{
 					rotate: [ 58, 20, 0 ],
@@ -54,7 +54,6 @@ const MapChart = () => {
 					</Marker>
 				))}
 			</ComposableMap>{' '}
-			<ButtonHolder />
 		</S.Section>
 	);
 };
