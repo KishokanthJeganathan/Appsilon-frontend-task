@@ -10,11 +10,12 @@ export const TitleDiv = styled.div`
 		margin: 0.5rem 0rem;
 	}
 	display: grid;
-	grid-template-columns: 3fr 1fr;
+	grid-template-columns: 2.5fr 1fr;
 	align-items: center;
 	span {
 		display: flex;
 		font-size: ${setFontSize.icon};
 		justify-content: space-around;
+		cursor: pointer;
 	}
 `;

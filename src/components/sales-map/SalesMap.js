@@ -1,6 +1,5 @@
 import React from 'react';
 import { ComposableMap, Geographies, Geography, Marker } from 'react-simple-maps';
-import ButtonHolder from '../button-holder/ButtonHolder';
 import GraphTitle from '../graph-title/GraphTitle';
 import * as S from './styles';
 
@@ -16,7 +15,7 @@ const markers = [
 const MapChart = () => {
 	return (
 		<S.Section>
-			<GraphTitle title="Highest performers in LATAM" />
+			<GraphTitle title="OVERVIEW" />
 			<ComposableMap
 				style={{ width: '100%', height: '90%' }}
 				projection="geoAzimuthalEqualArea"

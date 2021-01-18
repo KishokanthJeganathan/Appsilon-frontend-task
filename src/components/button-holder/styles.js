@@ -6,7 +6,7 @@ export const Div = styled.div`
 	padding: 1rem;
 
 	${media.small`
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 0.8fr 1fr;
 	column-gap:1rem`};
 
 	${media.tablet`
@@ -18,6 +18,6 @@ export const Div = styled.div`
 
 	span {
 		display: flex;
-		justify-content: space-around;
+		justify-content: space-between;
 	}
 `;
